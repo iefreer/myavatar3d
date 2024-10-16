@@ -1,6 +1,10 @@
 # what is myavatar3d
 An out-of-the-box 3d avatar ( virtual human ) engine for three.js based projects
 
+# online documentation
+english: https://techbrood.com/myavatar/en
+chinese: https://techbrood.com/myavatar
+
 # how to use myavatar3d
 
 1. import dependencies

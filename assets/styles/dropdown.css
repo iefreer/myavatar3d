@@ -1,0 +1,15 @@
+.dropdown {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  width: 220px;
+  height: 40px;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Myavatar for threejs demo</title>
+  </head>
+  <body>
+    <div id="content">
+      <section id="home">
+        <!-- the following element is for 3d content container -->
+        <main id="myavatar" class="column" tabindex="1"></main>
+  
+        <!-- app level ui -->
+        <aside class="column">
+          <div class="panel">
+            <div>Control Panel</div>
+            <a id="link"></a>
+            
+            <div class='actions'>
+              <button id="spawn">Spawn</button>
+              <p>choose character</p>
+              <input type="radio" id="mary" name="character" value="mary" checked>
+              <label for="mary">mary</label><br>
+          
+              <input type="radio" id="ryan" name="character" value="ryan">
+              <label for="ryan">ryan</label><br>                           
+            </div>
+  
+            <div class="chat">
+
+              <div class="section">
+                <p>LLM</p>
+                <input type="radio" id="llm" name="llm" value="Spark" checked>
+                <label for="llm">Xunfei Spark</label>
+              </div>
+
+              <div class="section">
+                <p>Chat mode</p>
+                <input type="radio" id="read" name="mode" value="read" checked>
+                <label for="read">read</label><br>
+            
+                <input type="radio" id="qa" name="mode" value="qa">
+                <label for="qa">question</label><br>            
+              </div>
+
+              <div class="section">
+                <p>Role</p>
+                <input type="radio" id="girl" name="role" value="Girl" checked>
+                <label for="girl">Girl</label><br>
+
+                <input type="radio" id="seniorFemale" name="role" value="SeniorFemale">
+                <label for="seniorFemale">Senior Female</label><br>
+            
+                <input type="radio" id="boy" name="role" value="Boy">
+                <label for="boy">Boy</label><br>
+
+                <input type="radio" id="seniorMale" name="role" value="SeniorMale">
+                <label for="seniorMale">Senior Male</label><br>
+              </div>
+
+              <div class="section">
+                <p>Style</p>
+                <input type="radio" id="angry" name="style" value="angry">
+                <label for="angry">Angry</label><br>
+            
+                <input type="radio" id="calm" name="style" value="calm" checked>
+                <label for="calm">Calm</label><br>
+                
+                <input type="radio" id="sad" name="style" value="sad">
+                <label for="sad">Sad</label><br>
+
+                <input type="radio" id="cheerful" name="style" value="cheerful">
+                <label for="cheerful">Cheerful</label><br>
+              </div>
+
+              <div class="section">
+                <p>Words</p>
+                <input type="text" id="words" name="words" placeholder="Please input your words here" maxlength="100"/>
+                <div>
+                  <select name="wordlist" id="wordlist">
+                    <option value="">--Choose words--</option>
+                    <option value="ssic">请介绍下上海科创中心</option>
+                    <option value="techbrood">请介绍下踏得网</option>
+                  </select>
+                </div>
+                <p id="answer"></p>
+                <button id="stopAnswer">stop</button>
+              </div>
+            
+            </div>
+
+            <div class="motions">
+
+              <p>Motions</p>
+              <select name="motions" id="motions">
+                <option value="">--Choose motion--</option>
+                <option value="Dance">Dance</option>
+                <option value="Walk">Walk</option>
+              </select>
+
+              <button id="stopMotion">stop</button>
+              <button id="pauseMotion">pause</button>
+              <button id="resumeMotion">resume</button>
+              <button id="idleMotion">idle</button>
+               
+            </div>
+            
+            <div class="navigation">
+              <p>Navigation</p>
+              <button id="goaway">go away</button>
+              <button id="comeback">come back</button>
+            </div>            
+            
+          </div>
+        </aside>
+      </section>
+    </div>
+
+    <script type="importmap">
+      {
+          "imports": {
+              "three": "https://techbrood.com/threejs/r163/build/three.module.js",
+              "three/addons/": "https://techbrood.com/threejs/r163/examples/jsm/",
+              "socket.io-client": "https://techbrood.com/socketio/4.4.1/socket.io.esm.min.js"
+          }
+      }
+    </script>
+    <script type="module" src="./index.js" defer></script>  
+  </body>
+</html>

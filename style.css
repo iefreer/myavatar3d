@@ -1,0 +1,168 @@
+*{
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+#myavatar {
+  background: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+button {
+  padding: 5px 10px;
+}
+input[type="text"] {
+  width: 100%;
+  outline: none;
+  border: none;
+  height: 20px;
+  padding: 5px;
+}
+.wrapper > ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.wrapper > ul li {
+  margin: 5px 10px;
+  padding: 5px 10px;
+  border: 1px solid #eee;
+  background: #ccc;
+}
+ul li > img {
+  width: 50px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+main.column {
+  flex: 4;
+}
+aside {
+  color: #222;
+  background: #ccc;
+  padding: 10px 20px;
+}
+
+#header {
+  height: 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #222;
+}
+
+nav.navigation {
+  float: right;
+}
+nav.navigation > div {
+  float: left;
+  padding: 3px 5px;
+}
+
+#myavatar {
+  background: url(./bg2.jpg) no-repeat center/cover;
+}
+div#content {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background: #eee;
+}
+
+section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+label {
+  max-width: 100px;
+  margin-right: 10px;
+}
+.wrapper {
+  width: 100%;
+  padding: 10px 20px;
+}
+.colorPicker {
+  width: 50px;
+  height: 20px;
+}
+p {
+  margin: 5px 0;
+  line-height: 1.5;
+}
+.section {
+  margin: 10px 0;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+  }
+}
